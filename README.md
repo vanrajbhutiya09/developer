@@ -1,1131 +1,926 @@
-# developer
-
-Skip to content
-vanrajbhutiya09
-developer
-Repository navigation
-Code
-Issues
-Pull requests
-Agents
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-developer
-/
-Name your file...
-in
-main
-
-Edit
-
-Preview
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-52
-53
-54
-55
-56
-57
-58
-59
-60
-61
-62
-63
-64
-65
-66
-67
-68
-69
-70
-71
-72
-73
-74
-75
-76
-77
-78
-79
-80
-81
-82
-83
-84
-85
-86
-87
-88
-89
-90
-91
-92
-93
-94
-95
-96
-97
-98
-99
-100
-101
-102
-103
-104
-105
-106
-107
-108
-109
-110
-111
-112
-113
-114
-115
-116
-117
-118
-119
-120
-121
-122
-123
-124
-125
-126
-127
-128
-129
-130
-131
-132
-133
-134
-135
-136
-137
-138
-139
-140
-141
-142
-143
-144
-145
-146
-147
-148
-149
-150
-151
-152
-153
-154
-155
-156
-157
-158
-159
-160
-161
-162
-163
-164
-165
-166
-167
-168
-169
-170
-171
-172
-173
-174
-175
-176
-177
-178
-179
-180
-181
-182
-183
-184
-185
-186
-187
-188
-189
-190
-191
-192
-193
-194
-195
-196
-197
-198
-199
-200
-201
-202
-203
-204
-205
-206
-207
-208
-209
-210
-211
-212
-213
-214
-215
-216
-217
-218
-219
-220
-221
-222
-223
-224
-225
-226
-227
-228
-229
-230
-231
-232
-233
-234
-235
-236
-237
-238
-239
-240
-241
-242
-243
-244
-245
-246
-247
-248
-249
-250
-251
-252
-253
-254
-255
-256
-257
-258
-259
-260
-261
-262
-263
-264
-265
-266
-267
-268
-269
-270
-271
-272
-273
-274
-275
-276
-277
-278
-279
-280
-281
-282
-283
-284
-285
-286
-287
-288
-289
-290
-291
-292
-293
-294
-295
-296
-297
-298
-299
-300
-301
-302
-303
-304
-305
-306
-307
-308
-309
-310
-311
-312
-313
-314
-315
-316
-317
-318
-319
-320
-321
-322
-323
-324
-325
-326
-327
-328
-329
-330
-331
-332
-333
-334
-335
-336
-337
-338
-339
-340
-341
-342
-343
-344
-345
-346
-347
-348
-349
-350
-351
-352
-353
-354
-355
-356
-357
-358
-359
-360
-361
-362
-363
-364
-365
-366
-367
-368
-369
-370
-371
-372
-373
-374
-375
-376
-377
-378
-379
-380
-381
-382
-383
-384
-385
-386
-387
-388
-389
-390
-391
-392
-393
-394
-395
-396
-397
-398
-399
-400
-401
-402
-403
-404
-405
-406
-407
-408
-409
-410
-411
-412
-413
-414
-415
-416
-417
-418
-419
-420
-421
-422
-423
-424
-425
-426
-427
-428
-429
-430
-431
-432
-433
-434
-435
-436
-437
-438
-439
-440
-441
-442
-443
-444
-445
-446
-447
-448
-449
-450
-451
-452
-453
-454
-455
-456
-457
-458
-459
-460
-461
-462
-463
-464
-465
-466
-467
-468
-469
-470
-471
-472
-473
-474
-475
-476
-477
-478
-479
-480
-481
-482
-483
-484
-485
-486
-487
-488
-489
-490
-491
-492
-493
-494
-495
-496
-497
-498
-499
-500
-501
-502
-503
-504
-505
-506
-507
-508
-509
-510
-511
-512
-513
-514
-515
-516
-517
-518
-519
-520
-521
-522
-523
-524
-525
-526
-527
-528
-529
-530
-531
-532
-533
-534
-535
-536
-537
-538
-539
-540
-541
-542
-543
-544
-545
-546
-547
-548
-549
-550
-551
-552
-553
-1️⃣ CORE BACKEND CONCEPTS
-🔹 Validation
-@Valid annotation
-
-@NotNull, @NotBlank, @Size
-
-Custom validation annotations
-
-Global exception handling for validation errors
-
-BindingResult usage
-
-🔹 Multithreading
-Thread lifecycle (New, Runnable, Blocked, Waiting, Terminated)
-
-Runnable vs Callable interfaces
-
-ExecutorService framework
-
-Synchronization (synchronized keyword, locks)
-
-CompletableFuture (🔥 Important in microservices)
-
-2️⃣ MICROSERVICE RESILIENCE
-🔹 Circuit Breaker Pattern
-Purpose: Prevent cascading failures
-
-States: Closed → Open → Half-Open
-
-When to use circuit breaker
-
-🔹 Resilience4j
-Circuit breaker implementation
-
-Retry mechanism
-
-Rate limiter
-
-Bulkhead pattern
-
-Time limiter
-
-@CircuitBreaker(name = "serviceName") annotation
-
-🔹 OAuth2 Basics
-Authorization Server
-
-Resource Server
-
-Access Token vs Refresh Token
-
-Client Credentials Flow
-
-Authorization Code Flow
-
-Securing microservices with OAuth2
-
-3️⃣ DATABASE KNOWLEDGE
-🔹 SQL Joins
-INNER JOIN
-
-LEFT JOIN
-
-RIGHT JOIN
-
-FULL JOIN
-
-Self joins
-
-🔹 Indexes
-Purpose of indexes
-
-B-Tree index
-
-Composite index
-
-When to use/avoid indexes
-
-🔹 Normalization
-1NF (First Normal Form)
-
-2NF (Second Normal Form)
-
-3NF (Third Normal Form)
-
-Denormalization concepts
-
-🔹 Transactions
-ACID properties
-
-Commit vs Rollback
-
-Isolation levels (Read Uncommitted, Read Committed, Repeatable Read, Serializable)
-
-@Transactional annotation
-
-4️⃣ ORM (OBJECT RELATIONAL MAPPING)
-🔹 Hibernate
-Entity mapping (@Entity, @Table)
-
-Relationships (@OneToMany, @ManyToOne, @OneToOne, @ManyToMany)
-
-Lazy vs Eager loading
-
-First-level cache
-
-Second-level cache
-
-HQL (Hibernate Query Language)
-
-🔹 Spring Data JPA
-JpaRepository interface
-
-Custom queries with @Query
-
-Pagination (Pageable)
-
-Sorting (Sort)
-
-Derived query methods (findBy, countBy, etc.)
-
-5️⃣ NoSQL (BONUS ⭐)
-🔹 MongoDB
-Document-based database concept
-
-BSON format
-
-Embedded documents vs References
-
-Indexing in MongoDB
-
-Aggregation framework
-
-Spring Data MongoDB
-
-6️⃣ DEVOPS & DEPLOYMENT
-🔹 Docker (🔥 VERY IMPORTANT)
-Dockerfile creation
-
-Image vs Container
-
-Port mapping
-
-Multi-stage builds
-
-Docker commands (build, run, push, pull)
-
-🔹 Docker Compose
-docker-compose.yml structure
-
-Running multiple containers
-
-Service networking
-
-Database + App configuration
-
-🔹 Kubernetes Basics
-Pods
-
-Deployments
-
-Services (ClusterIP, NodePort, LoadBalancer)
-
-ConfigMap
-
-Secrets
-
-Scaling replicas
-
-🔹 CI/CD Basics
-Build pipeline concepts
-
-Test automation
-
-Deployment pipeline
-
-GitHub Actions
-
-Jenkins basics
-
-🔹 Git & GitHub
-Branching strategy (GitFlow, Trunk-based)
-
-Pull requests
-
-Merge conflicts resolution
-
-Rebase vs Merge
-
-Git commands (commit, push, pull, merge, rebase)
-
-7️⃣ MESSAGING & EVENT-DRIVEN ARCHITECTURE (🔥 High Salary)
-🔹 Apache Kafka
-Producer
-
-Consumer
-
-Broker
-
-Topic
-
-Partition
-
-Offset
-
-Consumer Group
-
-🔹 Event-Driven Architecture
-Event publishing
-
-Event consumption
-
-Loose coupling benefits
-
-Async communication patterns
-
-🔹 Async Communication Options
-Kafka implementation
-
-RabbitMQ basics
-
-Spring @Async annotation
-
-Message queues concept
-
-8️⃣ TESTING
-🔹 JUnit
-Unit testing fundamentals
-
-Assertions (assertEquals, assertTrue, etc.)
-
-Test lifecycle (@BeforeEach, @AfterEach, etc.)
-
-🔹 Mockito
-Mocking dependencies
-
-@Mock annotation
-
-@InjectMocks annotation
-
-when().thenReturn() pattern
-
-Verify method calls
-
-🔹 Integration Testing
-@SpringBootTest
-
-Testcontainers (⭐ Advanced)
-
-Database testing
-
-REST API testing with TestRestTemplate
-
-🔹 Postman
-API testing
-
-Environment variables
-
-Authorization testing
-
-Collection runner
-
-Pre-request scripts
-
-9️⃣ MONITORING & LOGGING
-🔹 Logback
-Log levels (INFO, DEBUG, ERROR, TRACE)
-
-Logging patterns
-
-Rolling file appender
-
-Console vs File logging
-
-🔹 ELK Stack
-Elasticsearch (storage & search)
-
-Logstash (log processing)
-
-Kibana (visualization)
-
-Centralized logging setup
-
-🔹 Basic Monitoring
-Spring Boot Actuator
-
-Health checks
-
-Metrics (CPU, Memory)
-
-Custom metrics
-
-🔹 API Performance Tracking
-Response time monitoring
-
-Request/response logging
-
-Performance metrics collection
-
-SLA/SLO tracking
-
-Slow API detection
-
-🔟 MICROSERVICES FUNDAMENTALS
-🔹 Architecture Concepts
-Distributed system design
-
-Independent deployable services
-
-Database per service pattern
-
-Communication via REST/Messaging
-
-🔹 Monolith vs Microservices
-Monolith pros/cons
-
-Microservices pros/cons
-
-When to choose which
-
-1️⃣1️⃣ SERVICE COMMUNICATION
-🔹 Synchronous Communication
-REST APIs
-
-WebClient (non-blocking)
-
-OpenFeign (declarative REST client)
-
-🔹 Asynchronous Communication
-Kafka
-
-RabbitMQ
-
-Event-driven architecture
-
-1️⃣2️⃣ SECURITY
-🔹 Spring Security
-Authentication
-
-Authorization
-
-Role-based access control
-
-🔹 JWT
-Token generation
-
-Token validation
-
-Stateless authentication
-
-JWT structure (Header, Payload, Signature)
-
-🔹 OAuth2
-Authorization Server
-
-Resource Server
-
-Access Token
-
-Refresh Token
-
-Client Credentials Flow
-
-Authorization Code Flow
-
-1️⃣3️⃣ IMPORTANT MICROSERVICE COMPONENTS
-API Gateway (Spring Cloud Gateway)
-
-Service Discovery (Eureka)
-
-Config Server (Spring Cloud Config)
-
-Distributed Tracing (Sleuth, Zipkin)
-
-Load Balancing (Ribbon, Spring Cloud LoadBalancer)
-
-Rate Limiting
-
-1️⃣4️⃣ CLOUD & AWS (☁️ VERY IMPORTANT)
-🔹 Why AWS for Microservices
-High availability
-
-Auto scaling
-
-Managed services
-
-🔹 Compute Services
-EC2 (Virtual servers)
-
-ECS (Docker container service)
-
-EKS (Kubernetes service)
-
-Lambda (Serverless - ⭐ Bonus)
-
-🔹 Database Services
-RDS (MySQL, PostgreSQL)
-
-DynamoDB (NoSQL)
-
-Aurora
-
-🔹 Storage Services
-S3 (File storage)
-
-S3 bucket policies
-
-🔹 Security Services
-IAM (Users, Roles, Policies)
-
-Cognito (User authentication)
-
-🔹 Messaging Services
-SQS (Queue service)
-
-SNS (Pub/Sub service)
-
-🔹 Networking
-VPC (Virtual Private Cloud)
-
-Subnets
-
-Security Groups
-
-API Gateway
-
-🔹 Monitoring
-CloudWatch (Logs, Metrics)
-
-X-Ray (Tracing)
-
-🔹 AWS Deployment Skills
-Deploy Spring Boot on EC2
-
-Dockerize app and push to ECR
-
-Deploy on ECS/Fargate
-
-Deploy on EKS
-
-Connect RDS from app
-
-Configure IAM roles
-
-Setup S3 for file storage
-
-1️⃣5️⃣ ADVANCED CONCEPTS (High Salary Topics)
-Distributed transactions
-
-Saga Pattern (Choreography vs Orchestration)
-
-API versioning strategies
-
-Caching with Redis
-
-Rate limiting implementation
-
-Blue-Green deployment
-
-Canary deployment
-
-Infrastructure as Code (Terraform basics)
-
-🎯 MINIMUM PROJECT REQUIREMENTS (Interview Ready)
-Build these projects to be job-ready:
-
-📦 Project 1: Basic Microservices Setup
-Auth Service (JWT)
-
-Product Service
-
-Order Service
-
-API Gateway
-
-Service Discovery (Eureka)
-
-📦 Project 2: Database Integration
-MySQL for one service
-
-MongoDB for another service
-
-Database per service pattern
-
-📦 Project 3: Resilience
-Circuit breaker implementation
-
-Retry mechanism
-
-📦 Project 4: Docker & Deployment
-Dockerize all services
-
-Docker Compose setup
-
-Run entire stack locally
-
-📦 Project 5: Messaging
-Kafka integration
-
-Event-driven communication between services
-
-📦 Project 6: Monitoring
-Actuator endpoints
-
-Log aggregation
-
-📦 Project 7: AWS Deployment (⭐ Bonus)
-Deploy one service on EC2
-
-Use RDS for database
-
-Store images in S3
-
-📊 SKILL TRACKING SUMMARY
-Category	Total Topics	Learned	Progress
-Core Backend	10	[ ]	0%
-Microservice Resilience	13	[ ]	0%
-Database Knowledge	18	[ ]	0%
-ORM	12	[ ]	0%
-NoSQL	6	[ ]	0%
-DevOps & Deployment	25	[ ]	0%
-Messaging	12	[ ]	0%
-Testing	15	[ ]	0%
-Monitoring	12	[ ]	0%
-Microservices Fundamentals	6	[ ]	0%
-Service Communication	5	[ ]	0%
-Security	10	[ ]	0%
-Microservice Components	6	[ ]	0%
-AWS Cloud	25	[ ]	0%
-Advanced Concepts	10	[ ]	0%
-TOTAL	185	[ ]	0%
-🏆 TARGET ROLES
-Java Backend Developer
-
-Spring Boot Developer
-
-Microservices Developer
-
-Backend Engineer
-
-Cloud Backend Engineer
-
-💰 SALARY TARGET (India)
-Fresher: ₹4–8 LPA
-
-With these skills: ₹8–12 LPA
-
-With AWS + Kafka: ₹12–18 LPA
-
-With 2-3 years experience: ₹18–25 LPA+
-
-Created for Vanraj 💪🔥
-Master Spring Boot Microservices + AWS = High Salary Career
+# 🚀 Spring Boot Microservice Developer – Complete Mastery Checklist
+
+<div align="center">
+
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
+![Microservices](https://img.shields.io/badge/Microservices-FF6F00?style=for-the-badge&logo=&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Kafka](https://img.shields.io/badge/Kafka-231F20?style=for-the-badge&logo=apachekafka&logoColor=white)
+
+**Your Complete Roadmap to Become a Production-Ready Microservices Developer** 🎯
+
+[![GitHub stars](https://img.shields.io/github/stars/vanraj/microservices-checklist?style=social)](https://github.com/vanraj/microservices-checklist)
+[![GitHub forks](https://img.shields.io/github/forks/vanraj/microservices-checklist?style=social)](https://github.com/vanraj/microservices-checklist)
+
+</div>
+
+---
+
+## 📋 Table of Contents
+- [About This Checklist](#-about-this-checklist)
+- [How to Use](#-how-to-use)
+- [Quick Progress Tracker](#-quick-progress-tracker)
+- [Complete Skill Checklist](#-complete-skill-checklist)
+- [Project Roadmap](#-project-roadmap)
+- [Interview Preparation](#-interview-preparation)
+- [Resources](#-resources)
+- [Target Roles & Salary](#-target-roles--salary)
+
+---
+
+## 🎯 About This Checklist
+
+This comprehensive checklist is designed for **Java developers** who want to master **Spring Boot Microservices** and become industry-ready. It covers everything from core concepts to advanced topics including **AWS cloud deployment**.
+
+### 🎓 What You'll Achieve
+- ✅ Master Spring Boot Microservices architecture
+- ✅ Learn industry-standard resilience patterns
+- ✅ Deploy applications on AWS cloud
+- ✅ Implement event-driven architecture with Kafka
+- ✅ Containerize applications with Docker
+- ✅ Write production-ready code with testing
+
+---
+
+## 📊 How to Use
+
+### Progress Tracking Legend
+- [ ] **Not Started** - Topic yet to learn
+- [x] **Completed** - Topic mastered
+- 📌 **Priority** - Must learn for job
+- ⭐ **Bonus** - Good to have / High salary
+
+### Suggested Learning Path
+1. Start with **Core Backend Concepts** (Week 1-2)
+2. Move to **Microservices Fundamentals** (Week 3-4)
+3. Learn **Database & ORM** (Week 5-6)
+4. Master **DevOps & Docker** (Week 7-8)
+5. Advance to **Messaging & AWS** (Week 9-12)
+
+---
+
+## ⚡ Quick Progress Tracker
+
+| Category | Total Topics | Completed | Progress |
+|----------|--------------|-----------|----------|
+| Core Backend Concepts | 12 | [ ] | ▰▰▰▰▰▰▰▰▰▰ 0% |
+| Microservice Resilience | 13 | [ ] | ▰▰▰▰▰▰▰▰▰▰ 0% |
+| Database Knowledge | 18 | [ ] | ▰▰▰▰▰▰▰▰▰▰ 0% |
+| ORM & JPA | 12 | [ ] | ▰▰▰▰▰▰▰▰▰▰ 0% |
+| NoSQL (MongoDB) | 6 | [ ] | ▰▰▰▰▰▰▰▰▰▰ 0% |
+| DevOps & Deployment | 25 | [ ] | ▰▰▰▰▰▰▰▰▰▰ 0% |
+| Messaging & Kafka | 12 | [ ] | ▰▰▰▰▰▰▰▰▰▰ 0% |
+| Testing | 15 | [ ] | ▰▰▰▰▰▰▰▰▰▰ 0% |
+| Monitoring & Logging | 12 | [ ] | ▰▰▰▰▰▰▰▰▰▰ 0% |
+| Microservices Fundamentals | 6 | [ ] | ▰▰▰▰▰▰▰▰▰▰ 0% |
+| Service Communication | 5 | [ ] | ▰▰▰▰▰▰▰▰▰▰ 0% |
+| Security | 10 | [ ] | ▰▰▰▰▰▰▰▰▰▰ 0% |
+| Microservice Components | 6 | [ ] | ▰▰▰▰▰▰▰▰▰▰ 0% |
+| AWS Cloud | 25 | [ ] | ▰▰▰▰▰▰▰▰▰▰ 0% |
+| Advanced Concepts | 10 | [ ] | ▰▰▰▰▰▰▰▰▰▰ 0% |
+| **TOTAL** | **187** | [ ] | ▰▰▰▰▰▰▰▰▰▰ 0% |
+
+---
+
+# 📚 COMPLETE SKILL CHECKLIST
+
+---
+
+## 1️⃣ CORE BACKEND CONCEPTS
+
+### 🔹 Java Fundamentals
+- [ ] Java 8+ features (Streams, Lambda, Optional)
+- [ ] Collections framework
+- [ ] Exception handling
+- [ ] Generics
+
+### 🔹 Validation
+- [ ] `@Valid` annotation
+- [ ] `@NotNull`, `@NotBlank`, `@Size`
+- [ ] `@Pattern`, `@Email`, `@Min`, `@Max`
+- [ ] Custom validation annotations
+- [ ] Global exception handling with `@ControllerAdvice`
+- [ ] `BindingResult` usage
+- [ ] Validation groups
+- [ ] 📌 Error message internationalization
+
+### 🔹 Multithreading
+- [ ] Thread lifecycle
+- [ ] `Runnable` vs `Callable`
+- [ ] `ExecutorService` framework
+- [ ] Synchronization (`synchronized`, locks)
+- [ ] `CompletableFuture` (🔥 Critical for microservices)
+- [ ] Fork/Join framework
+- [ ] Thread pools
+- [ ] Concurrent collections
+
+---
+
+## 2️⃣ MICROSERVICE RESILIENCE
+
+### 🔹 Circuit Breaker Pattern
+- [ ] **Purpose**: Prevent cascading failures
+- [ ] **States**: Closed → Open → Half-Open
+- [ ] Failure detection mechanisms
+- [ ] Recovery strategies
+
+### 🔹 Resilience4j (⭐ Industry Standard)
+- [ ] 📌 Circuit breaker implementation
+- [ ] 📌 Retry mechanism with backoff
+- [ ] Rate limiter
+- [ ] Bulkhead pattern (thread isolation)
+- [ ] Time limiter
+- [ ] Cache implementation
+- [ ] `@CircuitBreaker(name = "serviceName")`
+- [ ] `@Retry(name = "serviceName")`
+- [ ] `@RateLimiter(name = "serviceName")`
+- [ ] `@Bulkhead(name = "serviceName")`
+- [ ] `@TimeLimiter(name = "serviceName")`
+- [ ] Metrics collection
+- [ ] Event publishing
+
+### 🔹 OAuth2 Basics
+- [ ] Authorization Server
+- [ ] Resource Server
+- [ ] Access Token vs Refresh Token
+- [ ] JWT tokens
+- [ ] Client Credentials Flow (Machine-to-Machine)
+- [ ] Authorization Code Flow (Web apps)
+- [ ] Password Grant Flow (Legacy)
+- [ ] Refresh Token Flow
+- [ ] Securing microservices with OAuth2
+
+---
+
+## 3️⃣ DATABASE KNOWLEDGE
+
+### 🔹 SQL Joins
+- [ ] 📌 INNER JOIN
+- [ ] 📌 LEFT JOIN
+- [ ] 📌 RIGHT JOIN
+- [ ] FULL JOIN
+- [ ] CROSS JOIN
+- [ ] Self joins
+- [ ] Complex joins with multiple tables
+
+### 🔹 Indexes
+- [ ] Purpose of indexes
+- [ ] B-Tree index
+- [ ] Composite index
+- [ ] Unique index
+- [ ] Full-text index
+- [ ] When to use/avoid indexes
+- [ ] Index maintenance
+- [ ] Execution plan analysis
+
+### 🔹 Normalization
+- [ ] 1NF (Atomic values)
+- [ ] 2NF (No partial dependency)
+- [ ] 3NF (No transitive dependency)
+- [ ] BCNF
+- [ ] Denormalization for performance
+- [ ] Practical trade-offs
+
+### 🔹 Transactions
+- [ ] 📌 ACID properties
+- [ ] 📌 Commit vs Rollback
+- [ ] 📌 Isolation levels:
+  - [ ] Read Uncommitted
+  - [ ] Read Committed
+  - [ ] Repeatable Read
+  - [ ] Serializable
+- [ ] `@Transactional` propagation
+- [ ] `@Transactional` rollback rules
+- [ ] Pessimistic vs Optimistic locking
+- [ ] Deadlock handling
+
+---
+
+## 4️⃣ ORM (OBJECT RELATIONAL MAPPING)
+
+### 🔹 Hibernate
+- [ ] Entity mapping (`@Entity`, `@Table`)
+- [ ] 📌 Relationships:
+  - [ ] `@OneToOne`
+  - [ ] `@OneToMany`
+  - [ ] `@ManyToOne`
+  - [ ] `@ManyToMany`
+- [ ] 📌 Lazy vs Eager loading
+- [ ] `@JoinColumn`, `@JoinTable`
+- [ ] Cascading operations
+- [ ] First-level cache (Session cache)
+- [ ] Second-level cache
+- [ ] Query cache
+- [ ] HQL (Hibernate Query Language)
+- [ ] Native queries
+- [ ] Criteria API
+- [ ] N+1 problem and solutions
+- [ ] Batch fetching
+
+### 🔹 Spring Data JPA
+- [ ] `JpaRepository` interface
+- [ ] `CrudRepository` vs `JpaRepository`
+- [ ] 📌 Custom queries with `@Query`
+- [ ] 📌 Pagination (`Pageable`)
+- [ ] 📌 Sorting (`Sort`)
+- [ ] Derived query methods:
+  - [ ] `findBy...`
+  - [ ] `countBy...`
+  - [ ] `deleteBy...`
+  - [ ] `existsBy...`
+- [ ] `@Modifying` for update/delete
+- [ ] Projections
+- [ ] Specifications
+- [ ] QueryDSL integration
+
+---
+
+## 5️⃣ NoSQL (BONUS ⭐)
+
+### 🔹 MongoDB
+- [ ] Document-based database concept
+- [ ] BSON format
+- [ ] 📌 Embedded documents vs References
+- [ ] Indexing strategies
+- [ ] Aggregation pipeline:
+  - [ ] `$match`
+  - [ ] `$group`
+  - [ ] `$project`
+  - [ ] `$lookup` (join equivalent)
+- [ ] Spring Data MongoDB
+- [ ] `@Document` annotation
+- [ ] `MongoRepository`
+- [ ] GridFS for large files
+- [ ] Transactions in MongoDB
+
+---
+
+## 6️⃣ DEVOPS & DEPLOYMENT (🔥 CRITICAL)
+
+### 🔹 Docker (🚀 MUST KNOW)
+- [ ] 📌 Dockerfile creation
+- [ ] 📌 Image vs Container
+- [ ] 📌 Port mapping
+- [ ] 📌 Volume mounting
+- [ ] Environment variables
+- [ ] Multi-stage builds
+- [ ] Docker commands:
+  - [ ] `docker build`
+  - [ ] `docker run`
+  - [ ] `docker push/pull`
+  - [ ] `docker exec`
+  - [ ] `docker logs`
+- [ ] Docker networks
+- [ ] Docker volumes
+- [ ] Docker registry (Docker Hub, ECR)
+
+### 🔹 Docker Compose
+- [ ] docker-compose.yml structure
+- [ ] Running multiple containers
+- [ ] Service dependencies (`depends_on`)
+- [ ] Networking between services
+- [ ] Environment configuration
+- [ ] Volume definitions
+- [ ] `docker-compose up/down`
+- [ ] Scaling services
+- [ ] Health checks
+
+### 🔹 Kubernetes Basics (⭐ High Demand)
+- [ ] Architecture (Master/Worker nodes)
+- [ ] 📌 Pods
+- [ ] 📌 Deployments
+- [ ] 📌 Services:
+  - [ ] ClusterIP
+  - [ ] NodePort
+  - [ ] LoadBalancer
+- [ ] ConfigMap
+- [ ] Secrets
+- [ ] Ingress
+- [ ] Persistent volumes
+- [ ] StatefulSets
+- [ ] `kubectl` commands
+- [ ] Health probes (liveness, readiness)
+- [ ] Horizontal Pod Autoscaling
+
+### 🔹 CI/CD Basics
+- [ ] Build pipeline concepts
+- [ ] Test automation
+- [ ] Deployment pipeline stages
+- [ ] 📌 GitHub Actions:
+  - [ ] Workflow files
+  - [ ] Triggers
+  - [ ] Jobs and steps
+  - [ ] Actions marketplace
+- [ ] Jenkins:
+  - [ ] Pipeline as code
+  - [ ] Jenkinsfile
+  - [ ] Plugins
+- [ ] GitLab CI
+- [ ] Artifact management
+
+### 🔹 Git & GitHub
+- [ ] Branching strategy:
+  - [ ] GitFlow
+  - [ ] Trunk-based development
+- [ ] 📌 Pull requests
+- [ ] 📌 Merge conflict resolution
+- [ ] Rebase vs Merge
+- [ ] `git stash`, `git cherry-pick`
+- [ ] Git hooks
+- [ ] Semantic versioning
+- [ ] Tags and releases
+
+---
+
+## 7️⃣ MESSAGING & EVENT-DRIVEN ARCHITECTURE (🔥 High Salary)
+
+### 🔹 Apache Kafka
+- [ ] 📌 Producer API
+- [ ] 📌 Consumer API
+- [ ] 📌 Broker
+- [ ] 📌 Topic
+- [ ] 📌 Partition
+- [ ] 📌 Offset
+- [ ] Consumer Group
+- [ ] Replication factor
+- [ ] Kafka Connect
+- [ ] Kafka Streams
+- [ ] Exactly-once semantics
+- [ ] Message ordering
+- [ ] Dead letter queues
+- [ ] Spring Kafka integration
+- [ ] `@KafkaListener`
+
+### 🔹 Event-Driven Architecture
+- [ ] Event sourcing
+- [ ] CQRS pattern
+- [ ] Event publishing strategies
+- [ ] Event consumption patterns
+- [ ] Loose coupling benefits
+- [ ] Idempotent consumers
+- [ ] Saga pattern with events
+
+### 🔹 Async Communication Options
+- [ ] RabbitMQ:
+  - [ ] Exchanges
+  - [ ] Queues
+  - [ ] Bindings
+- [ ] Spring `@Async`
+- [ ] Message queues vs streams
+- [ ] Dead letter queues
+- [ ] Message retry strategies
+
+---
+
+## 8️⃣ TESTING
+
+### 🔹 JUnit 5
+- [ ] Unit testing fundamentals
+- [ ] Assertions:
+  - [ ] `assertEquals`
+  - [ ] `assertTrue/False`
+  - [ ] `assertThrows`
+  - [ ] `assertAll`
+- [ ] Test lifecycle:
+  - [ ] `@BeforeEach`
+  - [ ] `@AfterEach`
+  - [ ] `@BeforeAll`
+  - [ ] `@AfterAll`
+- [ ] Parameterized tests
+- [ ] Test suites
+- [ ] Conditional test execution
+
+### 🔹 Mockito
+- [ ] 📌 Mocking dependencies
+- [ ] 📌 `@Mock` annotation
+- [ ] 📌 `@InjectMocks`
+- [ ] 📌 `when().thenReturn()`
+- [ ] 📌 Verify method calls
+- [ ] Argument matchers
+- [ ] Mocking static methods (Mockito-inline)
+- [ ] Spying with `@Spy`
+- [ ] Answer callbacks
+
+### 🔹 Integration Testing
+- [ ] `@SpringBootTest`
+- [ ] `@DataJpaTest`
+- [ ] `@WebMvcTest`
+- [ ] Testcontainers (⭐ Advanced)
+- [ ] Database testing with H2/Testcontainers
+- [ ] REST API testing with:
+  - [ ] `TestRestTemplate`
+  - [ ] `MockMvc`
+  - [ ] WebTestClient
+- [ ] @MockBean and @SpyBean
+
+### 🔹 Postman
+- [ ] API testing collections
+- [ ] Environment variables
+- [ ] Pre-request scripts
+- [ ] Tests scripts
+- [ ] Authorization setup
+- [ ] Collection runner
+- [ ] Newman CLI
+- [ ] API documentation
+
+---
+
+## 9️⃣ MONITORING & LOGGING
+
+### 🔹 Logback
+- [ ] Log levels (TRACE, DEBUG, INFO, WARN, ERROR)
+- [ ] Logging patterns
+- [ ] Appenders:
+  - [ ] ConsoleAppender
+  - [ ] FileAppender
+  - [ ] RollingFileAppender
+- [ ] MDC (Mapped Diagnostic Context)
+- [ ] Logback-spring.xml configuration
+- [ ] Profile-specific logging
+
+### 🔹 ELK Stack
+- [ ] Elasticsearch:
+  - [ ] Indexing
+  - [ ] Search queries
+- [ ] Logstash:
+  - [ ] Input plugins
+  - [ ] Filter plugins
+  - [ ] Output plugins
+- [ ] Kibana:
+  - [ ] Dashboards
+  - [ ] Visualizations
+  - [ ] Discover
+- [ ] Filebeat
+- [ ] Centralized logging setup
+
+### 🔹 Monitoring
+- [ ] 📌 Spring Boot Actuator:
+  - [ ] Health endpoint
+  - [ ] Metrics endpoint
+  - [ ] Info endpoint
+  - [ ] Custom endpoints
+- [ ] 📌 Custom metrics with Micrometer
+- [ ] Prometheus integration
+- [ ] Grafana dashboards
+- [ ] Distributed tracing with:
+  - [ ] Spring Cloud Sleuth
+  - [ ] Zipkin
+  - [ ] Jaeger
+
+### 🔹 API Performance Tracking
+- [ ] Response time monitoring
+- [ ] Request/response logging
+- [ ] Percentiles (p95, p99)
+- [ ] Throughput tracking
+- [ ] Error rate monitoring
+- [ ] SLA/SLO tracking
+- [ ] Slow API detection
+- [ ] Performance regression testing
+
+---
+
+## 🔟 MICROSERVICES FUNDAMENTALS
+
+### 🔹 Architecture Concepts
+- [ ] 📌 Distributed system design
+- [ ] 📌 Independent deployability
+- [ ] 📌 Database per service
+- [ ] 📌 Communication via REST/Messaging
+- [ ] Domain-driven design basics
+- [ ] Bounded contexts
+
+### 🔹 Monolith vs Microservices
+| Aspect | Monolith | Microservices |
+|--------|----------|---------------|
+| [ ] Deployment | Single unit | Independent |
+| [ ] Scaling | Vertical | Horizontal |
+| [ ] Database | Shared | Per service |
+| [ ] Team structure | One team | Multiple teams |
+| [ ] Complexity | Lower | Higher |
+| [ ] When to choose | Startups, simple apps | Large, complex systems |
+
+---
+
+## 1️⃣1️⃣ SERVICE COMMUNICATION
+
+### 🔹 Synchronous Communication
+- [ ] REST APIs with Spring MVC
+- [ ] 📌 WebClient (non-blocking, reactive)
+- [ ] 📌 OpenFeign (declarative REST client)
+- [ ] Error handling in sync calls
+- [ ] Timeout configuration
+- [ ] Retry patterns
+
+### 🔹 Asynchronous Communication
+- [ ] Kafka (preferred)
+- [ ] RabbitMQ
+- [ ] Event-driven patterns
+- [ ] Request-reply pattern over async
+
+---
+
+## 1️⃣2️⃣ SECURITY
+
+### 🔹 Spring Security
+- [ ] Authentication providers
+- [ ] Authorization filters
+- [ ] Role-based access control (RBAC)
+- [ ] Method security (`@PreAuthorize`)
+- [ ] Security context
+- [ ] CORS configuration
+- [ ] CSRF protection
+
+### 🔹 JWT
+- [ ] 📌 Token structure (Header, Payload, Signature)
+- [ ] 📌 Token generation
+- [ ] 📌 Token validation
+- [ ] Stateless authentication
+- [ ] Refresh token rotation
+- [ ] JWT with Spring Security
+
+### 🔹 OAuth2 Deep Dive
+- [ ] Authorization Server setup
+- [ ] Resource Server configuration
+- [ ] Client registration
+- [ ] Scopes and permissions
+- [ ] Token introspection
+- [ ] Keycloak integration (⭐ Bonus)
+
+---
+
+## 1️⃣3️⃣ IMPORTANT MICROSERVICE COMPONENTS
+
+- [ ] 📌 **API Gateway** (Spring Cloud Gateway):
+  - [ ] Routing
+  - [ ] Filtering
+  - [ ] Rate limiting
+  - [ ] Request transformation
+- [ ] 📌 **Service Discovery** (Eureka):
+  - [ ] Service registration
+  - [ ] Service discovery
+  - [ ] Heartbeat mechanism
+- [ ] 📌 **Config Server** (Spring Cloud Config):
+  - [ ] External configuration
+  - [ ] Profile-specific configs
+  - [ ] Refresh scope
+- [ ] **Distributed Tracing** (Sleuth + Zipkin)
+- [ ] **Load Balancing** (Spring Cloud LoadBalancer)
+- [ ] **Rate Limiting** implementation
+- [ ] **Distributed Caching** (Redis)
+
+---
+
+## 1️⃣4️⃣ CLOUD & AWS (☁️ CRITICAL FOR JOBS)
+
+### 🔹 Why AWS for Microservices
+- [ ] High availability
+- [ ] Auto scaling
+- [ ] Managed services
+- [ ] Pay-as-you-go pricing
+
+### 🔹 Compute Services
+- [ ] 📌 **EC2**:
+  - [ ] AMI
+  - [ ] Instance types
+  - [ ] Security groups
+  - [ ] Key pairs
+  - [ ] User data
+- [ ] 📌 **ECS**:
+  - [ ] Task definitions
+  - [ ] Services
+  - [ ] Fargate vs EC2 launch type
+- [ ] 📌 **EKS**:
+  - [ ] Control plane
+  - [ ] Worker nodes
+  - [ ] `kubectl` configuration
+- [ ] **Lambda** (⭐ Bonus):
+  - [ ] Functions
+  - [ ] Triggers
+  - [ ] Serverless architecture
+
+### 🔹 Database Services
+- [ ] 📌 **RDS**:
+  - [ ] MySQL/PostgreSQL setup
+  - [ ] Multi-AZ deployment
+  - [ ] Read replicas
+  - [ ] Automated backups
+- [ ] 📌 **DynamoDB**:
+  - [ ] Tables
+  - [ ] Primary keys
+  - [ ] Secondary indexes
+  - [ ] DAX (caching)
+- [ ] **Aurora** (MySQL/PostgreSQL compatible)
+- [ ] **ElastiCache** (Redis/Memcached)
+
+### 🔹 Storage Services
+- [ ] 📌 **S3**:
+  - [ ] Buckets
+  - [ ] Objects
+  - [ ] Bucket policies
+  - [ ] Versioning
+  - [ ] Lifecycle rules
+  - [ ] Static website hosting
+- [ ] **EBS** (Block storage)
+- [ ] **EFS** (File storage)
+
+### 🔹 Security Services
+- [ ] 📌 **IAM**:
+  - [ ] Users
+  - [ ] Groups
+  - [ ] Roles
+  - [ ] Policies (JSON)
+  - [ ] Best practices
+- [ ] **Cognito**:
+  - [ ] User pools
+  - [ ] Identity pools
+  - [ ] Federated identities
+- [ ] **KMS** (Key management)
+- [ ] **Secrets Manager**
+
+### 🔹 Messaging Services
+- [ ] 📌 **SQS**:
+  - [ ] Standard vs FIFO queues
+  - [ ] Dead-letter queues
+  - [ ] Visibility timeout
+- [ ] 📌 **SNS**:
+  - [ ] Topics
+  - [ ] Subscriptions
+  - [ ] Fan-out pattern
+- [ ] **EventBridge**
+- [ ] **Kinesis** (streaming data)
+
+### 🔹 Networking
+- [ ] 📌 **VPC**:
+  - [ ] Subnets (public/private)
+  - [ ] Route tables
+  - [ ] Internet Gateway
+  - [ ] NAT Gateway
+  - [ ] Security Groups
+  - [ ] NACLs
+- [ ] **API Gateway**:
+  - [ ] REST APIs
+  - [ ] HTTP APIs
+  - [ ] WebSocket APIs
+  - [ ] Usage plans
+- [ ] **CloudFront** (CDN)
+- [ ] **Route 53** (DNS)
+
+### 🔹 Monitoring & Logging
+- [ ] 📌 **CloudWatch**:
+  - [ ] Log groups
+  - [ ] Metrics
+  - [ ] Alarms
+  - [ ] Dashboards
+- [ ] **X-Ray**:
+  - [ ] Traces
+  - [ ] Segments
+  - [ ] Service maps
+- [ ] **CloudTrail** (audit logging)
+
+### 🔹 AWS Deployment Skills
+- [ ] Deploy Spring Boot on EC2
+- [ ] Dockerize app and push to ECR
+- [ ] Deploy on ECS/Fargate
+- [ ] Deploy on EKS
+- [ ] Connect RDS from application
+- [ ] Configure IAM roles for EC2/ECS
+- [ ] Setup S3 for file uploads
+- [ ] Use SQS for decoupling
+- [ ] Implement CloudWatch logging
+- [ ] Auto-scaling configuration
+
+---
+
+## 1️⃣5️⃣ ADVANCED CONCEPTS (High Salary Topics)
+
+### 🔹 Distributed Transactions
+- [ ] Two-Phase Commit (2PC)
+- [ ] 📌 **Saga Pattern**:
+  - [ ] Choreography-based saga
+  - [ ] Orchestration-based saga
+  - [ ] Compensation transactions
+- [ ] Eventual consistency
+
+### 🔹 API Best Practices
+- [ ] 📌 API versioning strategies:
+  - [ ] URI versioning
+  - [ ] Header versioning
+  - [ ] Content negotiation
+- [ ] 📌 Idempotency
+- [ ] Pagination strategies
+- [ ] HATEOAS
+- [ ] OpenAPI/Swagger documentation
+
+### 🔹 Performance Optimization
+- [ ] 📌 Caching with Redis
+- [ ] CDN integration
+- [ ] Database query optimization
+- [ ] Connection pooling
+- [ ] Gzip compression
+- [ ] Response caching
+
+### 🔹 Deployment Strategies
+- [ ] Blue-Green deployment
+- [ ] Canary deployment
+- [ ] Rolling update
+- [ ] Feature flags
+- [ ] A/B testing
+
+### 🔹 Infrastructure as Code
+- [ ] Terraform basics:
+  - [ ] Providers
+  - [ ] Resources
+  - [ ] Variables
+  - [ ] State management
+- [ ] CloudFormation
+- [ ] AWS CDK
+
+---
+
+## 🏗️ PROJECT ROADMAP
+
+### 📦 Project 1: Basic Microservices Setup (Week 1-2)
+- [ ] Create Auth Service (JWT based)
+- [ ] Create Product Service
+- [ ] Create Order Service
+- [ ] Implement API Gateway
+- [ ] Setup Service Discovery (Eureka)
+- [ ] Add Config Server
+
+### 📦 Project 2: Database Integration (Week 3-4)
+- [ ] MySQL for Product Service
+- [ ] MongoDB for Order Service
+- [ ] Implement database per service
+- [ ] Add Flyway/Liquibase for migrations
+- [ ] Implement pagination and sorting
+
+### 📦 Project 3: Resilience (Week 5)
+- [ ] Add Circuit Breaker
+- [ ] Implement Retry mechanism
+- [ ] Add Bulkhead pattern
+- [ ] Implement Rate Limiter
+
+### 📦 Project 4: Docker & Containerization (Week 6)
+- [ ] Create Dockerfiles for all services
+- [ ] Setup docker-compose for local dev
+- [ ] Add docker-compose for entire stack
+- [ ] Implement health checks
+- [ ] Setup networks and volumes
+
+### 📦 Project 5: Messaging (Week 7-8)
+- [ ] Setup Kafka cluster locally
+- [ ] Implement event publishing
+- [ ] Implement event consumption
+- [ ] Create event-driven workflow (Order → Payment → Inventory)
+
+### 📦 Project 6: Testing (Week 9)
+- [ ] Write unit tests (80% coverage)
+- [ ] Write integration tests
+- [ ] Add contract tests
+- [ ] Setup Postman collection
+
+### 📦 Project 7: Monitoring (Week 10)
+- [ ] Add Actuator endpoints
+- [ ] Setup ELK stack locally
+- [ ] Implement distributed tracing
+- [ ] Create custom metrics
+
+### 📦 Project 8: AWS Deployment (Week 11-12) ⭐
+- [ ] Deploy one service on EC2
+- [ ] Use RDS for MySQL
+- [ ] Store images in S3
+- [ ] Deploy with ECS/Fargate
+- [ ] Setup CloudWatch monitoring
+
+---
+
+## 🎯 INTERVIEW PREPARATION
+
+### 🔹 Top 50 Microservices Interview Questions
+- [ ] What are microservices? Pros and cons?
+- [ ] Difference between Monolith and Microservices?
+- [ ] What is service discovery? How Eureka works?
+- [ ] Explain API Gateway pattern
+- [ ] What is Circuit Breaker? How does it work?
+- [ ] Explain Saga pattern
+- [ ] How do you handle distributed transactions?
+- [ ] What is eventual consistency?
+- [ ] Explain database per service pattern
+- [ ] How do you secure microservices?
+- [ ] What is OAuth2? Explain flows
+- [ ] How JWT works?
+- [ ] What is idempotency? Why important?
+- [ ] How do you handle service-to-service communication?
+- [ ] Explain CQRS pattern
+- [ ] What is event sourcing?
+- [ ] How Kafka works? Explain terms
+- [ ] Difference between Kafka and RabbitMQ?
+- [ ] How do you containerize Spring Boot app?
+- [ ] What is Docker Compose used for?
+- [ ] Explain Kubernetes architecture
+- [ ] What is ConfigMap and Secrets?
+- [ ] How do you implement logging in microservices?
+- [ ] What is distributed tracing?
+- [ ] How Spring Cloud Sleuth works?
+- [ ] Explain blue-green deployment
+- [ ] What is canary deployment?
+- [ ] How do you test microservices?
+- [ ] What is contract testing?
+- [ ] How do you handle configuration in microservices?
+- [ ] What is Spring Cloud Config?
+- [ ] How do you implement rate limiting?
+- [ ] Explain bulkhead pattern
+- [ ] What is resilience4j?
+- [ ] How do you handle versioning?
+- [ ] What is Strangler pattern?
+- [ ] Explain Sidecar pattern
+- [ ] What is Ambassador pattern?
+- [ ] How do you monitor microservices?
+- [ ] What metrics are important?
+- [ ] How ELK stack works?
+- [ ] What is Prometheus and Grafana?
+- [ ] How do you deploy on AWS?
+- [ ] Explain ECS vs EKS
+- [ ] What is IAM? How it works?
+- [ ] How SQS works?
+- [ ] Explain S3 storage classes
+- [ ] What is VPC?
+- [ ] How do you handle secrets in AWS?
+- [ ] What is CloudWatch used for?
+
+---
+
+## 📚 RESOURCES
+
+### 📖 Books
+- [ ] "Building Microservices" by Sam Newman
+- [ ] "Spring Microservices in Action" by John Carnell
+- [ ] "Designing Data-Intensive Applications" by Martin Kleppmann
+
+### 🎓 Online Courses
+- [ ] Spring Boot Microservices - Udemy (in28minutes)
+- [ ] AWS Certified Developer - Stephane Maarek
+- [ ] Kafka for Developers - Confluent
+
+### 🛠️ Practice Platforms
+- [ ] LeetCode (for Java)
+- [ ] HackerRank (for SQL)
+- [ ] AWS Free Tier (hands-on practice)
+
+---
+
+## 💼 TARGET ROLES & SALARY
+
+### 🎯 Job Titles
+- [ ] Java Backend Developer
+- [ ] Spring Boot Developer
+- [ ] Microservices Developer
+- [ ] Backend Engineer
+- [ ] Cloud Backend Engineer
+- [ ] Senior Software Engineer (Java)
+
+### 📈 Salary Range (India)
+
+| Experience | Without AWS | With AWS + Kafka |
+|------------|-------------|-------------------|
+| Fresher | ₹4-6 LPA | ₹6-8 LPA |
+| 1-2 years | ₹6-9 LPA | ₹9-12 LPA |
+| 2-3 years | ₹9-12 LPA | ₹12-18 LPA |
+| 3-5 years | ₹12-18 LPA | ₹18-25 LPA |
+| 5+ years | ₹18-25 LPA | ₹25-40 LPA+ |
+
+### 🌍 International Opportunities
+- Remote jobs: $60k-$120k/year
+- On-site (US/EU): $100k-$150k/year
+
+---
+
+## 🏁 FINAL WORDS
+
+<div align="center">
+
+### 🚀 Your Journey to Microservices Mastery Starts Now!
+
+**Created for Vanraj** 💪🔥
+
+*"The only way to do great work is to love what you do. And the only way to become great at microservices is to build them."*
+
+[![GitHub followers](https://img.shields.io/github/followers/vanraj?style=social)](https://github.com/vanraj)
+[![Twitter Follow](https://img.shields.io/twitter/follow/vanraj?style=social)](https://twitter.com/vanraj)
+
+**⭐ Star this repository if you find it useful!**
+
+</div>
+
+---
+
+## 📝 License
+
+This checklist is open source and available for everyone to use in their learning journey.
+
+---
+
+**Last Updated**: February 2026
+**Version**: 2.0
+**Author**: Vanraj
