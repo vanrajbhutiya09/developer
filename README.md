@@ -90,7 +90,7 @@ This comprehensive checklist is designed for **Java developers** who want to mas
 ## 1️⃣ CORE BACKEND CONCEPTS
 
 ### 🔹 Java Fundamentals
-- [ ] Java 8+ features (Streams, Lambda, Optional)
+- [done] Java 8+ features (Streams, Lambda, Optional)
 - [ ] Collections framework
 - [ ] Exception handling
 - [ ] Generics
